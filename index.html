@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  
+    <h3>Main page</h3>
+   
+        <h4>Login</h4>
+        <div class="login-form">
+    <form method = "POST" action="login.php">
+        <input type="email" name="email" placeholder="Email">
+        <!-- <br><br> -->
+        <input type="password" name="psw" placeholder="Password">
+        <br>
+        <br>
+        <input type="submit" value="Sign in" name="signin">
+    </form>
+ 
+    <hr>
+    <!-- sign up -->
+
+        <h4>Sign up</h4>
+    <form method = "POST" action="signup.php">
+        <input name="firstname" placeholder="Your name" required>
+        <input name="secondname" placeholder="Your surname" required>
+        <br><br>
+        <div class="gender">
+        Cinsiyet: 
+        <br>
+        Man:
+        <input type="radio" name="gender" value="man" required>
+        <br>
+        Woman:
+        <input type="radio" name="gender" value="woman" required>
+        <br><br>
+        Birthday:
+        <input type="date" name="birthday" max="2023-10-25" class="bday" required>
+        <br><br>
+         <input type="email" name="email" placeholder="Email" class="email" required>
+        <br><br>
+        <input type="password" name="psw" placeholder="Password" class="psw" required>
+        <br><br>
+        <input type="password" name="pswrpt" placeholder="Repeat Password" class="psw" required>
+        <br><br>
+        <input type="submit" value="Sign up" name="signup">
+    </form>
+
+</body>
+</html>
